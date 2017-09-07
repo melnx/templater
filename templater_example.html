@@ -1,0 +1,189 @@
+<html>
+<head>
+  <script src="templater.js"></script>
+  <script>
+    teams = {
+        "Radiant": {
+            name:"Radiant",
+            heroes: {
+                "bloodseeker": {
+                    image: "https://dota2.gamepedia.com/media/dota2.gamepedia.com/5/56/Bloodseeker_icon.png?version=d277645f32f91002b61c0a302bbe9fb4",
+                    name: "Bloodseeker",
+                    items: [
+                      { name: "dagon",  image: "https://dota2.gamepedia.com/media/dota2.gamepedia.com/b/bc/Dagon_1_icon.png?version=ff209aa1e60bd8a9e6d8968eccdfa2d8",},
+                      { name: "eblade",  image: "https://dota2.gamepedia.com/media/dota2.gamepedia.com/5/5b/Ethereal_Blade_icon.png?version=be9f0e23dd9b2ca56c962789618743fb",},
+                      { name: "silver edge",  image: "https://dota2.gamepedia.com/media/dota2.gamepedia.com/9/91/Silver_Edge_icon.png?version=9548db1743bc1ea624692a8945d7d90e",},
+                      { name: "aghanims", image:"https://dota2.gamepedia.com/media/dota2.gamepedia.com/0/07/Aghanim%27s_Scepter_icon.png?version=c50d0b127779b9687146ed93eb17ef6e"},
+                      { name: "refresher", image:"https://dota2.gamepedia.com/media/dota2.gamepedia.com/e/e2/Refresher_Orb_icon.png?version=1a17226c9adbd02929747741964f68e5"},
+                      { name: "midas", image:"https://dota2.gamepedia.com/media/dota2.gamepedia.com/5/5b/Hand_of_Midas_icon.png?version=4b736b1f0b94e6055a82ff2b2aa0218a"},
+                    ]
+                },
+                "ancient Apparition": {
+                    image: "https://dota2.gamepedia.com/media/dota2.gamepedia.com/6/67/Ancient_Apparition_icon.png?version=fccb3f4be84c2070396a697a952f6920",
+                    name: "Ancient Apparition",
+                    items: [
+                      { name: "dagon",  image: "https://dota2.gamepedia.com/media/dota2.gamepedia.com/b/bc/Dagon_1_icon.png?version=ff209aa1e60bd8a9e6d8968eccdfa2d8",},
+                      { name: "eblade",  image: "https://dota2.gamepedia.com/media/dota2.gamepedia.com/5/5b/Ethereal_Blade_icon.png?version=be9f0e23dd9b2ca56c962789618743fb",},
+                      { name: "silver edge",  image: "https://dota2.gamepedia.com/media/dota2.gamepedia.com/9/91/Silver_Edge_icon.png?version=9548db1743bc1ea624692a8945d7d90e",},
+                      { name: "aghanims", image:"https://dota2.gamepedia.com/media/dota2.gamepedia.com/0/07/Aghanim%27s_Scepter_icon.png?version=c50d0b127779b9687146ed93eb17ef6e"},
+                      { name: "refresher", image:"https://dota2.gamepedia.com/media/dota2.gamepedia.com/e/e2/Refresher_Orb_icon.png?version=1a17226c9adbd02929747741964f68e5"},
+                      { name: "midas", image:"https://dota2.gamepedia.com/media/dota2.gamepedia.com/5/5b/Hand_of_Midas_icon.png?version=4b736b1f0b94e6055a82ff2b2aa0218a"},
+                    ]
+                }
+            }
+        },
+        "Dire": {
+            name:"Dire",
+            heroes: {
+              "morphling": {
+                  image: "https://dota2.gamepedia.com/media/dota2.gamepedia.com/7/7b/Morphling_icon.png?version=069a728ffec35c1a80d2e9834e2749b6",
+                  name: "Morphling",
+                  items: [
+                    { name: "dagon",  image: "https://dota2.gamepedia.com/media/dota2.gamepedia.com/b/bc/Dagon_1_icon.png?version=ff209aa1e60bd8a9e6d8968eccdfa2d8",},
+                    { name: "eblade",  image: "https://dota2.gamepedia.com/media/dota2.gamepedia.com/5/5b/Ethereal_Blade_icon.png?version=be9f0e23dd9b2ca56c962789618743fb",},
+                    { name: "silver edge",  image: "https://dota2.gamepedia.com/media/dota2.gamepedia.com/9/91/Silver_Edge_icon.png?version=9548db1743bc1ea624692a8945d7d90e",},
+                    { name: "aghanims", image:"https://dota2.gamepedia.com/media/dota2.gamepedia.com/0/07/Aghanim%27s_Scepter_icon.png?version=c50d0b127779b9687146ed93eb17ef6e"},
+                    { name: "refresher", image:"https://dota2.gamepedia.com/media/dota2.gamepedia.com/e/e2/Refresher_Orb_icon.png?version=1a17226c9adbd02929747741964f68e5"},
+                    { name: "midas", image:"https://dota2.gamepedia.com/media/dota2.gamepedia.com/5/5b/Hand_of_Midas_icon.png?version=4b736b1f0b94e6055a82ff2b2aa0218a"},
+                  ]
+              },
+              "pugna": {
+                  image: "https://dota2.gamepedia.com/media/dota2.gamepedia.com/c/cd/Pugna_icon.png?version=97b6ab69100d49d1db7b52fd0d5a3680",
+                  name: "Pugna",
+                  items: [
+                    { name: "dagon",  image: "https://dota2.gamepedia.com/media/dota2.gamepedia.com/b/bc/Dagon_1_icon.png?version=ff209aa1e60bd8a9e6d8968eccdfa2d8",},
+                    { name: "eblade",  image: "https://dota2.gamepedia.com/media/dota2.gamepedia.com/5/5b/Ethereal_Blade_icon.png?version=be9f0e23dd9b2ca56c962789618743fb",},
+                    { name: "silver edge",  image: "https://dota2.gamepedia.com/media/dota2.gamepedia.com/9/91/Silver_Edge_icon.png?version=9548db1743bc1ea624692a8945d7d90e",},
+                    { name: "aghanims", image:"https://dota2.gamepedia.com/media/dota2.gamepedia.com/0/07/Aghanim%27s_Scepter_icon.png?version=c50d0b127779b9687146ed93eb17ef6e"},
+                    { name: "refresher", image:"https://dota2.gamepedia.com/media/dota2.gamepedia.com/e/e2/Refresher_Orb_icon.png?version=1a17226c9adbd02929747741964f68e5"},
+                    { name: "midas", image:"https://dota2.gamepedia.com/media/dota2.gamepedia.com/5/5b/Hand_of_Midas_icon.png?version=4b736b1f0b94e6055a82ff2b2aa0218a"},
+                  ]
+              }
+            }
+        }
+    }
+
+    var characters = [
+      {
+        name: "Morty",
+        title: "coder",
+        sub: {
+          name: "beach club",
+          bread: "white",
+          meat: "turkey",
+          cheese: "provolone"
+        },
+        fridge: [
+          "diet mt dew",
+          "pizza",
+          "icecream",
+        ],
+        pizza: {
+          sauce: "tomato",
+          meat: "papperoni",
+          other: "black olives"
+        }
+      },
+      {
+        name: "Rick",
+        title: "ops",
+        sub: {
+          name: "italian",
+          bread: "wheat",
+          meat: "salami",
+          cheese: "cheddar"
+        },
+        fridge: [
+          "coke zero",
+          "bread",
+          "oranges",
+        ],
+        pizza: {
+          sauce: "white",
+          meat: "chicken",
+          other: "bacon",
+        }
+      }
+    ]
+
+  </script>
+
+  <script type="text/html" id="teams" as="team">
+    <div>
+      <hr />
+      <h1>{team.name}  <a onclick="$remove('{$id}')">x</a> <!--a onclick="delete teams['{team.$key}']; $rebind()" > x</a--></h1>
+      <div scopes="heroes" as="hero">
+        <div>
+          <div style="float:left;">
+            <h3>{hero.name}  <a onclick="$remove('{$id}')">x</a> <!--a onclick="delete teams['{team.$key}'].heroes['{hero.$key}']; $rebind()" > x</a--></h3>
+            <img src="{hero.image}" />
+            <br />
+            <input type="text" value="{hero.name}" onkeyup="$rebind()" /><br />
+          </div>
+          <div style="margin-left:50px;">
+            <div scopes="items" as="item">
+              <div  style="float:left;">
+                <br />
+                <br />
+                {item.name} <a onclick="$remove('{$id}')">x</a> <!--a onclick="teams['{team.$key}'].heroes['{hero.$key}'].items.splice({item.$index},1); $rebind()" > x</a-->
+                <br />
+                <img src="{item.image}" />
+                <br />
+              </div>
+            </div>
+          </div>
+          <div style="clear:both;"></div>
+        </div>
+      </div>
+    </div>
+  </script>
+</head>
+<body>
+  <div template="teams" scopes="teams"></div>
+  
+  <script>
+    numbers = [
+      { a:5, b:4, subs:[{a:1,b:2, chars:[{a:"a",b:"b"}] },{a:4,b:6, chars:[{a:"a",b:"b"}] }] },
+      { a:1, b:2, subs:[{a:1,b:2, chars:[{a:"a",b:"b"}] },{a:3,b:4, chars:[{a:"a",b:"b"}] }] }
+    ];
+    function sum(a,b) {
+        return a+b;
+    }
+  </script>
+  <div scopes="numbers" as="number">
+    <h3>{1+parseInt($index)} / {numbers.length} ::   {number.a} + {number.b} = {a + b}   Is it less than 5? {a+b<5 ? "YES" : "NO"}</h3>
+    <div scopes="subs" as="sub">
+      <h4>{sub.a} + {sub.b} = {sum(a,b)}</h4>
+
+      <div scopes="chars" as="char">
+        <sup>{char.a} + {char.b} = {a+b}</sup>
+      </div>
+    </div>
+    <br />
+  </div>
+
+
+  <table>
+    <tr>
+     <th scopes="Object.keys( products[0] )">{$value}</th>
+    </tr>
+    <tr scopes="products">
+      <td>{id}</td>
+      <td>{base_currency}</td>
+      <td>{quote_currency}</td>
+      <td>{base_min_size}</td>
+      <td>{base_max_size}</td>
+      <td>{quote_increment}</td>
+      <td>{display_name}</td>
+      <td>{margin_enabled}</td>
+    </tr>
+  </table>
+
+  <script>
+    ajax('https://api.gdax.com/products/', function(data) {
+        window.products = JSON.parse(data);
+        $rebind();
+    })
+  </script>
+</body>
+</html>
